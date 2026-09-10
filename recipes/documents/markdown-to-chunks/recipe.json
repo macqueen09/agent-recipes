@@ -1,0 +1,14 @@
+{
+  "id": "markdown-to-chunks",
+  "title": "Markdown to traceable JSONL chunks",
+  "title_zh": "把长文切分成保留来源与位置的 JSONL 片段",
+  "summary": "Split a local Markdown document by character budget, preserving every decoded character and source offsets.",
+  "category": "documents",
+  "tags": ["markdown", "jsonl", "chunking", "rag-preparation", "长文切分"],
+  "input": "One UTF-8 Markdown file, up to 10 MB",
+  "output": "JSONL records with source, character offsets, stable IDs, and text",
+  "entrypoint": "main.py",
+  "requires_network": false,
+  "requires_credentials": false,
+  "origin": ["original:all-recipe-code-and-fixture"]
+}

@@ -1,0 +1,2 @@
+# Add fixed versions for the dependencies this recipe actually uses.
+

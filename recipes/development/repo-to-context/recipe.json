@@ -1,0 +1,14 @@
+{
+  "id": "repo-to-context",
+  "title": "Code directory to a reviewable context pack",
+  "title_zh": "把代码目录整理成可审查的上下文文件",
+  "summary": "Collect supported source files into Markdown with relative paths, file limits, and an inclusion manifest.",
+  "category": "development",
+  "tags": ["repository", "context", "code-review", "markdown", "代码上下文"],
+  "input": "One local code directory; Git is recommended for ignore rules",
+  "output": "A Markdown file and a sibling .manifest.json file",
+  "entrypoint": "main.py",
+  "requires_network": false,
+  "requires_credentials": false,
+  "origin": ["dependency:simonw/files-to-prompt", "original:file-selection-and-manifest"]
+}

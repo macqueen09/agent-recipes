@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "project": "Agent Recipes",
+  "stage": "review-prototype",
+  "recipes": [
+    {
+      "id": "repo-to-context",
+      "title": "Code directory to a reviewable context pack",
+      "title_zh": "把代码目录整理成可审查的上下文文件",
+      "summary": "Collect supported source files into Markdown with relative paths, file limits, and an inclusion manifest.",
+      "category": "development",
+      "tags": [
+        "repository",
+        "context",
+        "code-review",
+        "markdown",
+        "代码上下文"
+      ],
+      "input": "One local code directory; Git is recommended for ignore rules",
+      "output": "A Markdown file and a sibling .manifest.json file",
+      "entrypoint": "main.py",
+      "requires_network": false,
+      "requires_credentials": false,
+      "origin": [
+        "dependency:simonw/files-to-prompt",
+        "original:file-selection-and-manifest"
+      ],
+      "path": "recipes/development/repo-to-context",
+      "run": [
+        "python",
+        "recipes/development/repo-to-context/main.py"
+      ]
+    },
+    {
+      "id": "html-to-markdown",
+      "title": "Saved HTML to readable Markdown",
+      "title_zh": "把已保存的 HTML 转成 Markdown",
+      "summary": "Convert a local HTML file into a reading document with headings, links, tables, and code.",
+      "category": "documents",
+      "tags": [
+        "html",
+        "markdown",
+        "web-content",
+        "reading-pack",
+        "网页转换"
+      ],
+      "input": "One UTF-8 HTML file, up to 5 MB",
+      "output": "One Markdown file",
+      "entrypoint": "main.py",
+      "requires_network": false,
+      "requires_credentials": false,
+      "origin": [
+        "vendored:microsoft/markitdown",
+        "dependency:markdownify",
+        "original:local-file-wrapper-and-fixture"
+      ],
+      "path": "recipes/documents/html-to-markdown",
+      "run": [
+        "python",
+        "recipes/documents/html-to-markdown/main.py"
+      ]
+    },
+    {
+      "id": "markdown-to-chunks",
+      "title": "Markdown to traceable JSONL chunks",
+      "title_zh": "把长文切分成保留来源与位置的 JSONL 片段",
+      "summary": "Split a local Markdown document by character budget, preserving every decoded character and source offsets.",
+      "category": "documents",
+      "tags": [
+        "markdown",
+        "jsonl",
+        "chunking",
+        "rag-preparation",
+        "长文切分"
+      ],
+      "input": "One UTF-8 Markdown file, up to 10 MB",
+      "output": "JSONL records with source, character offsets, stable IDs, and text",
+      "entrypoint": "main.py",
+      "requires_network": false,
+      "requires_credentials": false,
+      "origin": [
+        "original:all-recipe-code-and-fixture"
+      ],
+      "path": "recipes/documents/markdown-to-chunks",
+      "run": [
+        "python",
+        "recipes/documents/markdown-to-chunks/main.py"
+      ]
+    }
+  ]
+}

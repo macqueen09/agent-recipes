@@ -1,0 +1,14 @@
+{
+  "id": "html-to-markdown",
+  "title": "Saved HTML to readable Markdown",
+  "title_zh": "把已保存的 HTML 转成 Markdown",
+  "summary": "Convert a local HTML file into a reading document with headings, links, tables, and code.",
+  "category": "documents",
+  "tags": ["html", "markdown", "web-content", "reading-pack", "网页转换"],
+  "input": "One UTF-8 HTML file, up to 5 MB",
+  "output": "One Markdown file",
+  "entrypoint": "main.py",
+  "requires_network": false,
+  "requires_credentials": false,
+  "origin": ["vendored:microsoft/markitdown", "dependency:markdownify", "original:local-file-wrapper-and-fixture"]
+}

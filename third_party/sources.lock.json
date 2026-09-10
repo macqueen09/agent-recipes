@@ -1,0 +1,32 @@
+{
+  "retrieved_on": "2026-09-10",
+  "files": [
+    {
+      "project": "microsoft/markitdown",
+      "commit": "6270920c28000d217774ea29fa7a9262d7d5c65b",
+      "license": "MIT",
+      "source_url": "https://raw.githubusercontent.com/microsoft/markitdown/6270920c28000d217774ea29fa7a9262d7d5c65b/packages/markitdown/src/markitdown/converters/_markdownify.py",
+      "local_path": "recipes/documents/html-to-markdown/vendor/markitdown_markdownify.py",
+      "sha256": "531c6bf44adc7c9e178b0da919f96b9e9ac82d9ae40ea7a4f214f99a97e46a82",
+      "modified": false
+    },
+    {
+      "project": "microsoft/markitdown",
+      "commit": "6270920c28000d217774ea29fa7a9262d7d5c65b",
+      "license": "MIT",
+      "source_url": "https://raw.githubusercontent.com/microsoft/markitdown/6270920c28000d217774ea29fa7a9262d7d5c65b/LICENSE",
+      "local_path": "recipes/documents/html-to-markdown/vendor/LICENSE.markitdown",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "modified": false
+    },
+    {
+      "project": "simonw/files-to-prompt",
+      "commit": "1b234ff6dccb2ca3e56b5c256696558fb85306dc",
+      "license": "Apache-2.0",
+      "source_url": "https://raw.githubusercontent.com/simonw/files-to-prompt/1b234ff6dccb2ca3e56b5c256696558fb85306dc/LICENSE",
+      "local_path": "third_party/licenses/files-to-prompt.LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "modified": false
+    }
+  ]
+}

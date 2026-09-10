@@ -1,0 +1,15 @@
+{
+  "id": "replace-with-folder-name",
+  "title": "Replace with an actual task",
+  "title_zh": "替换为具体任务名称",
+  "summary": "Describe the result this recipe actually produces.",
+  "category": "replace-with-category",
+  "tags": [],
+  "input": "Describe accepted input",
+  "output": "Describe actual output",
+  "entrypoint": "main.py",
+  "requires_network": false,
+  "requires_credentials": false,
+  "origin": ["original:replace-with-actual-origin"]
+}
+
