@@ -1,6 +1,6 @@
 # Roadmap
 
-These are candidates, not implemented features or promised release dates.
+The prioritized backlog now lives in [TODO.md](../TODO.md). Its first item, the [Codex / Claude Code skill installer](AGENT_SKILL.md), is implemented. The other items below remain candidates, not promised release dates.
 
 ## Current review prototype
 
@@ -17,9 +17,8 @@ Three local task recipes, bilingual documentation, source attribution, sample ou
 
 ## Later, if users need them
 
-PDF/document recipes, optional model summarization with explicit providers and costs, a browsable static website, and opt-in skill or MCP integrations. Each addition must have an example that works and accurately describe any network, account, or runtime requirements.
+PDF/document recipes, optional model summarization with explicit providers and costs, a browsable static website, and optional MCP integrations. Each addition must have an example that works and accurately describe any network, account, or runtime requirements.
 
-## Before publication
+## Publication and growth
 
-Review the name and first content theme, choose the GitHub owner and repository slug, run hosted CI, then publish the repository and initial release. A source catalog and README alone do not create search traffic; useful examples and appropriate project introductions still matter.
-
+The repository is public at [macqueen09/agent-recipes](https://github.com/macqueen09/agent-recipes); the initial CI matrix passed. A source catalog and README alone do not create search traffic. Follow the ranked backlog, measure real task outcomes, and publish releases only for completed changes.

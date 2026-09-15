@@ -38,6 +38,15 @@ These are task tools an agent can use, with deterministic outputs. The prototype
 
 ## Use with an agent
 
+**Install as a project skill:** [Codex / Claude Code setup](docs/AGENT_SKILL.md). From this checkout, with an existing target project:
+
+```sh
+python scripts/install_skill.py --agent codex --project /path/to/your/project
+python scripts/install_skill.py --agent claude --project /path/to/your/project
+```
+
+The installed skill bundles all three recipes and can run independently of this checkout. Dependency installation remains separate. [Feature priorities and growth TODO](TODO.md).
+
 Describe the task and provide this repository. For example:
 
 > Use the html-to-markdown recipe to convert my saved HTML file. Keep the original unchanged, show me the generated Markdown, and report any limitations.

@@ -1,5 +1,13 @@
 # Verification record
 
+## 2026-09-15 — skill packaging
+
+Local gate passed with 17 tests on Windows / Python 3.12: the original 11 plus six installer tests. New coverage includes Codex and Claude Code project destinations, dry-run without writes, preserving existing skills, rejecting recursive source destinations and missing projects, and all three bundled recipes running after the package is moved to an unrelated directory. Bundled file hashes and upstream source hashes were also checked.
+
+This verifies packaging and execution, not actual host-agent selection or Star conversion. Neither a live Codex nor a live Claude Code session was used to measure implicit invocation. A portable sample build is available locally under the ignored outputs directory.
+
+## 2026-09-10 — original prototype
+
 Verified locally on 2026-09-10 using Python 3.12.14 on Windows 11 (10.0.26200). Dependencies were installed into the project's isolated `.venv` from the pinned requirements.
 
 ## Completed checks

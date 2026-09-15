@@ -18,7 +18,7 @@ def main():
         if hashlib.sha256(path.read_bytes()).hexdigest() != entry["sha256"]:
             raise SystemExit(f"Upstream file changed without provenance update: {path}")
     broken = []
-    documents = [ROOT / "README.md", ROOT / "README.zh-CN.md", ROOT / "REVIEW.zh-CN.md", ROOT / "CONTRIBUTING.md", ROOT / "THIRD_PARTY_NOTICES.md"]
+    documents = [ROOT / "README.md", ROOT / "README.zh-CN.md", ROOT / "REVIEW.zh-CN.md", ROOT / "CONTRIBUTING.md", ROOT / "THIRD_PARTY_NOTICES.md", ROOT / "TODO.md"]
     documents += list((ROOT / "docs").rglob("*.md")) + list((ROOT / "recipes").glob("*/*/README*.md"))
     for document in documents:
         for target in re.findall(r"\]\(([^\s)]+)\)", document.read_text(encoding="utf-8")):
@@ -35,4 +35,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

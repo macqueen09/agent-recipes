@@ -45,7 +45,8 @@ Manifests are the source of truth. `scripts/build_catalog.py` validates required
 
 ## Keep expansion incremental
 
-Start with ordinary Python scripts and files. Add a new category only when its first working recipe exists. Add shared utilities only after several recipes actually need them; preserve standalone copyability. A future web catalog, skill, or MCP adapter can consume the same index, but those interfaces are not implemented in this prototype.
+Start with ordinary Python scripts and files. Add a new category only when its first working recipe exists. Add shared utilities only after several recipes actually need them; preserve standalone copyability. The [skill installer](AGENT_SKILL.md) now packages the existing catalog and runtime for Codex and Claude Code. A web catalog or MCP adapter could consume the same index later.
+
+`skills/agent-recipes/SKILL.md` is the packaging entrypoint. `scripts/install_skill.py` assembles it with a self-contained `runtime/` snapshot and `bundle.json` hashes into a new destination. Generated bundles stay in `outputs/` or the explicitly chosen external project, so recipe source stays in one maintained location. The [ranked backlog](../TODO.md) records future priorities and the assumptions behind them.
 
 Recipe code produces the requested task outputs. Marketing remains in documentation and is never appended to user-generated files or machine-readable data.
-

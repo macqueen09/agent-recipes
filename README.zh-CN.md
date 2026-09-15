@@ -33,6 +33,15 @@ python scripts/run_recipe.py markdown-to-chunks --max-chars 240
 
 ## 怎样让 agent 使用
 
+**新增：安装为 Codex / Claude Code 项目技能。** 在本仓库根目录运行，项目路径替换为已有目录：
+
+```sh
+python scripts/install_skill.py --agent codex --project /path/to/your/project
+python scripts/install_skill.py --agent claude --project /path/to/your/project
+```
+
+安装后技能包可脱离原仓库使用，Python 依赖需要另行安装。[完整说明与触发示例](docs/AGENT_SKILL.md) · [按增长潜力排序的 Todo](TODO.md)。
+
 把仓库提供给 agent，直接描述目标，例如：
 
 > 用这个仓库的 html-to-markdown 配方转换我保存的网页，保留原文件，并给我查看输出结果和限制。
